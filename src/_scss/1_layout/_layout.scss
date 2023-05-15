@@ -2,9 +2,9 @@
 ------------------------------------------------------------*/
 body {
     font-family: $main-fonts;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     min-width: $base-width;
-    line-height: 1.5;
+    line-height: 1.75;
     @include sp {
         min-width: 320px;
     }

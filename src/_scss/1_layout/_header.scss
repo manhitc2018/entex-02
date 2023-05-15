@@ -1,6 +1,107 @@
 /* Header
 ------------------------------------------------------------*/
 
+.c-header {
+    max-height: 80px;
+    position: fixed;
+    top: 0;
+
+    .l-container {
+        padding: 17px 20px 12px 21px;
+    }
+
+    .c-header__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-header__logo {
+        min-height: 50px;
+        margin-top: -2px;
+        position: relative;
+
+        &::after {
+            content: "Recruitment 2020";
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #3c3c3c;
+            line-height: 2.5;
+            position: absolute;
+            width: max-content;
+            left: 49px;
+            bottom: -3px;
+        }
+    }
+
+    .c-header__right {
+        display: flex;
+    }
+
+    .c-nav {
+        display: flex;
+    }
+
+    .c-nav__item {
+        &:not(:first-child) {
+            margin-left: 32px;
+        }
+
+        &:nth-child(2) {
+            padding-right: 2px;
+        }
+
+        &.is-active {
+            .c-nav__text {
+                border-bottom: 2px solid;
+                padding-bottom: 6px;
+            }
+        }
+    }
+
+    .c-header__btnsvg {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+    }
+
+    .c-nav__text {
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        line-height: 1.875;
+        color: #0080cc;
+    }
+
+    .c-nav__link {
+        display: block;
+        padding: 11px 3px 11px 0;
+        
+    }
+
+    .c-header__btn {
+        background-color: #0080cc;
+        border-radius: 9px;
+        margin-left: 40px;
+        max-height: 50px;
+    }
+
+    .c-header__btnIcon {
+        display: flex;
+        padding: 10px 35px;
+        align-items: center;
+    }
+
+    .c-header__btnText {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.667;
+        letter-spacing: 0.139em;
+        color: #fff;
+        padding: 0 5px;
+        margin-left: 3px;
+    }
+}
+
 /* Main menu
 ------------------------------------------------------------*/
 

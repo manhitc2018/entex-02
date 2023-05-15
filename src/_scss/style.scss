@@ -54,3 +54,61 @@
 // Utility .u-
 ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡*/
 @import "0_base/utility";
+// mainvisual
+.c-mainvisual {
+    height: 100vh;
+    position: relative;
+    padding-top: 80px;
+
+    .c-mainvisual__slider {
+        height: 100%;
+    }
+
+    .c-mainvisual__itemimg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .c-mainvisual__item {
+        height: 100%;
+    }
+
+    .c-mainvisual__item1 {
+        background: url(../../assets/img/index_pc/mainsisual.png);
+    }
+
+    .c-mainvisual__content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        max-width: 1200px;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .c-mainvisual__title {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 5rem;
+        font-weight: 500;
+        color: #fff;
+        line-height: 1.72;
+        letter-spacing: 0.08em;
+        font-feature-settings: "palt";
+    }
+
+    .c-mainvisual__itemtext {
+        display: flex;
+        background-color: #0080cc;
+        max-height: 69px;
+        margin-bottom: 16px;
+        align-items: center;
+        max-width: max-content;
+        padding: 0 12px 0 9px;
+
+    }
+}
