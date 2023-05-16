@@ -3,7 +3,6 @@
 body {
     font-family: $main-fonts;
     font-size: 1.6rem;
-    min-width: $base-width;
     line-height: 1.75;
     @include sp {
         min-width: 320px;
@@ -13,7 +12,24 @@ body {
 
 //-------------------------------------------------------
 .l-container {
-    width: $base-width;
+    max-width: $base-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.l-container__w1160 {
+    max-width: 1160px;
+    width: 100%;
+}
+
+.l-container__w1200 {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.l-container__w920 {
+    max-width: 920px;
+    width: 100%;
     margin: 0 auto;
 }
 //-------------------------------------------------------
