@@ -1,4 +1,118 @@
 /*------------------------------------------------------------
 footer
+
 ------------------------------------------------------------*/
+.c-footer {
+    padding-top: 21px;
+    border-top: 1px solid #0080cc;
+
+    .l-container {
+        padding: 0 20px;
+    }
+
+    .c-footer__layouttop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 19px;
+
+    }
+
+    .c-footer__btn {
+        width: 185px;
+        height: 50px;
+
+    }
+
+    .c-footer__btnIcon {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #0080cc;
+        border-radius: 9px;
+        display: flex;
+    }
+
+    .c-footer__btnsvg {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+    }
+
+    .c-footer__btnText {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.6667;
+        color: #fff;
+        letter-spacing: 0.124em;
+        padding: 0 5px;
+        margin-left: 3px;
+
+    }
+
+    .c-footer__right { 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .c-nav__item {
+        margin-right: 20px;
+
+        &:nth-child(2) {
+            padding: 0 6px;
+        }
+    }
+
+    .c-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 20px;
+    }
+    
+
+    .c-nav__text {
+        font-size: 1.6rem;
+        line-height: 1.875;
+        font-weight: 400;
+        letter-spacing: 0.02em;
+        color: #0080cc;
+        padding: 0 2px 0 4px;
+    }
+
+    .c-footer__bodylink {
+        max-width: 345px;
+        width: 100%;
+        margin-left: auto;
+        text-align: right;
+        margin-right: 41px;
+        padding: 5px 0 10px;
+    }
+
+    .c-footer__layoutbody {
+        border-top: 1px solid #efefef;
+    }
+
+    .c-footer__bodylinktext {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #a0a0a0;
+        line-height: 2.143;
+        letter-spacing: 0.02;
+    }
+
+    .c-footer__layoutbottom {
+        background-color: #0080cc;
+    }
+
+    .c-footer__copyright {
+        font-size: 1.4rem;
+        line-height: 2.143;
+        font-weight: 400;
+        letter-spacing: 0.024em;
+        color: #fff;
+        padding: 9px 0 8px;
+    }
+}
 
