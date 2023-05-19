@@ -43,6 +43,8 @@
 @import "2_component/10_line";
 @import "2_component/11_video";
 @import "2_component/12_slide";
+@import "2_component/13_keyframe";
+@import "2_component/14_modal";
 @import "2_component/99_other";
 
 /*≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
@@ -87,12 +89,40 @@
         width: 100%;
     }
 
+    .c-mainvisual__slider .slick-list,
+    .c-mainvisual__slider .slick-track {
+        height: 100%;
+    }
+
     .c-mainvisual__item {
         height: 100%;
     }
 
     .c-mainvisual__item1 {
         background: url(../../assets/img/index_pc/mainsisual.png);
+        
+    }
+
+    .slick-active {
+        .c-mainvisual__item1 {
+            animation: imageZoomIn 10s linear backwards;
+        }
+
+        .c-mainvisual__item2 {
+            animation: toptobottom 40s linear backwards;
+        }
+
+        .c-mainvisual__item3 {
+            animation: lefttoright 40s linear backwards;
+        }
+    }
+
+    .c-mainvisual__item2 {
+        background: url(../../assets/img/index_pc/mainsisual02.png);
+    }
+
+    .c-mainvisual__item3 {
+        background: url(../../assets/img/index_pc/mainsisual03.png);
     }
 
     .c-mainvisual__content {
@@ -783,6 +813,7 @@
 
         &:hover {
             border-color: #005384;
+            cursor: pointer;
 
             .c-interview__position {
                 background-color: #005384;
@@ -1120,11 +1151,32 @@
         padding: 0 36px;
         background-color: #f2f5f7;
         padding-top: 39px;
+        &.is-bg__bule{
+            display: none;
+            &.is-show{
+                display: block;
+            }
+        }
+        &.is-bg__gray{
+            display: none;
+            &.is-show{
+                display: block;
+            }
+        }
     }
-
+    .is-bg__gray {
+        border-color: #3C3C3C;
+        
+        .c-recruit__item:first-child {
+            border-bottom: 5px solid #3C3C3C;
+        }
+        .c-recruit__table{
+            padding-bottom: 71px;
+        }
+    }
     .is-bg__bule {
         border-color: #0080cc;
-
+        
         .c-recruit__item:first-child {
             border-bottom: 5px solid #0080cc;
         }
@@ -1287,6 +1339,18 @@
 
 }
 
+.is-show__bggray .c-recruit .c-bg__blue{
+    max-width: 483px;
+    padding-top: 34px;
+}
+.is-show__bggray .c-recruit .c-bg__gray{
+    padding-top: 35px;
+    padding-bottom: 23px;
+}
+.is-show__bggray .c-recruit .c-recruit__sub{
+    padding-bottom: 62px;
+}
+    
 // large PC
 @media screen and (min-width: 1201px) {
     .c-about .l-container__w1160,
