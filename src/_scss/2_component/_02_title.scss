@@ -10,6 +10,12 @@ title
     font-weight: 500;
     line-height: 1.133;
     letter-spacing: 0.074em;
+    @include tab {
+        font-size: 3rem;
+        line-height: 1;
+        letter-spacing: 0.054em;
+    }
+
 }
 
 .c-title02 {
@@ -24,6 +30,11 @@ title
     font-weight: 500;
     line-height: 1.1364;
     letter-spacing: 0.074em;
+    @include tab {
+        font-size: 3rem;
+        line-height: 1.4667;
+        letter-spacing: 0.054em;
+    }
 }
 
 .c-title04 {

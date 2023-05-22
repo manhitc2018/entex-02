@@ -10,17 +10,17 @@ $(document).ready(function () {
         fade: true,
     });
 
-    // $(window)
-    // .scroll(function () {
-    //   var scrollDistance = $(window).scrollTop();
-    //   $('.is-scrollsection').each(function (i) {
-    //     if ($(this).position().top <= scrollDistance + 250) {
-    //       $(".c-header__menuitem.active").removeClass("active");
-    //       $(".c-header__menuitem").eq(i).addClass("active");
-    //     }
-    //   });
-    // })
-    // .scroll();
+    $(window)
+    .scroll(function () {
+      var scrollDistance = $(window).scrollTop();
+      $('.is-scrollsection').each(function (i) {
+        if ($(this).position().top <= scrollDistance + 250) {
+          $(".c-nav__item.is-active").removeClass("is-active");
+          $(".c-nav__item").eq(i).addClass("is-active");
+        }
+      });
+    })
+    .scroll();
 
     function closeModal(e) {
         if ($(e.target).is(".c-imgmodal") || $(e.target).is(".c-messagemodal")) {
