@@ -69,4 +69,29 @@ $(document).ready(function () {
             $("body").addClass("is-show__bggray");
         }
     });
+    $(".c-header__menuicon").click(function () {
+        if ( $("body").hasClass("is-shownavmb")){
+            $("body").removeClass("is-shownavmb");
+        }else{
+            $("body").addClass("is-shownavmb");
+        } 
+    });
+    $(".c-navmb .c-navmb__item").click(function () {
+        $('body').removeClass('is-shownavmb')
+    });
+    $(".c-navmb .c-header__btnmb").click(function () {
+        $('body').removeClass('is-shownavmb')
+    });
+
+    // $(window)
+    // .scroll(function () {
+    //   var scrollDistance = $(window).scrollTop();
+    //   $('.is-scrollsection').each(function (i) {
+    //     if ($(this).position().top <= scrollDistance + 250) {
+    //       $(".c-navmb .c-navmb__item.is-active").removeClass("is-active");
+    //       $(".c-navmb .c-navmb__item").eq(i).addClass("is-active");
+    //     }
+    //   });
+    // })
+    // .scroll();
 });

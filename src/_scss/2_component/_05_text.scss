@@ -13,4 +13,8 @@ text
         font-size: 1.4rem;
         line-height: 1.79;
     }
+    @include sp {
+        line-height: 1.571;
+
+    }
 }
